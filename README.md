@@ -30,10 +30,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Vue-cli、Vue-router、VueX、Axios、Elenment-ui、Node.js、Express、Mongodb
 
 ### 3、项目初始化开发
-使用脚手架创建项目
-安装所有依赖/指定依赖
-开发环境运行
-生产环境打包与发布
+使用脚手架创建项目  
+
+安装所有依赖/指定依赖  
+
+开发环境运行  
+
+生产环境打包与发布  
+
 
 ### 4、搭建项目整体界面结构
 vue-router的理解和使用

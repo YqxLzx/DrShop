@@ -200,5 +200,29 @@ g. 前台验证提示
 
 3). 组件的最大化复用  
 
+### 13、各个组件及其思路
 
 
+### 14、遇到的问题
+1：问题;,VueX中，组件shoppingBag，mutations中再模型上修改state中的[]中商品对象属性,使用set后仍无法做到响应式。  
+   解决;要使用set直接修改[]中的obj是无法做到响应式，因为VUE记录的是[],所以要直接set修改[],   
+   代码;
+   isChecked(state,index){ 
+            Vue.set(
+              state.addMerchandises,
+              index,
+              Object.assign(
+                state.addMerchandises[index], 
+                {
+                    checked: !(state.addMerchandises[index].checked)
+                }
+              )
+            );       
+        },  
+2:问题;,VueX中，组件shoppingBag，要在action发生网络请求,使用this.$http会导致错误。
+  解决;VueX中this指向store,故使用this._vm.$root指向Vue实例
+  代码;this._vm.$root.$http.post('toShoppingBag',{ 
+                user:localStorage.getItem('token'),               
+                obj:data
+             })  
+  

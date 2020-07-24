@@ -239,8 +239,8 @@ g. 前台验证提示
   解决;VueX中this指向store,故使用this._vm.$root指向Vue实例  
   
   代码;  
-  this._vm.$root.$http.post('toShoppingBag',{  
   
+  this._vm.$root.$http.post('toShoppingBag',{  
   
                 user:localStorage.getItem('token'),  
                 

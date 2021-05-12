@@ -11,7 +11,7 @@
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "lodash": "^4.17.19",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-infinite-scroll": "^2.0.2",
